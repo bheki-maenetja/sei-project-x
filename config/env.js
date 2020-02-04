@@ -1,6 +1,6 @@
-const port = 4000
-const dbURI = 'mongodb://localhost/mobster-api'
-const secret = 'I made him an offer he couldn\'t refuse'
+const port = process.env.PORT || 4000
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/mobster-api'
+const secret = process.env.SECRET || 'I made him an offer he couldn\'t refuse'
 
 const userObjs = [
   {
