@@ -5,7 +5,7 @@
 .section {
   height: 95vh;
   overflow-y: scroll;
-  background-image: url('https://i.pinimg.com/originals/0a/e5/55/0ae55597547e782ec26863048559e796.jpg');
+  background-image: url('../assets/index-page-background.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -17,7 +17,6 @@
 
   * {
     color: white;
-    // text-shadow: 2px 2px black;
   }
 }
 
@@ -54,5 +53,15 @@
 .label, form > .title {
   color: white;
   text-shadow: 2px 2px black;
+}
+
+.error-page {
+  background-image: url('https://i.imgur.com/sFuLtnZ.jpg');
+  background-size: cover;
+
+  * {
+    color: white;
+    text-shadow: 1px 1px black;
+  }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 import Authorize from '../../lib/auth'
 
@@ -12,10 +12,16 @@ class Navbar extends React.Component {
 
   logout = () => {
     Authorize.logout()
-    this.props.history.push('/')
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      this.setState({ navbarOpen: false })
+    }
   }
 
   render() {
+    console.log(this.props)
     const { navbarOpen } = this.state
     return (
       <>
@@ -37,7 +43,8 @@ class Navbar extends React.Component {
               <Link className="navbar-item" to="/external-links">External Links</Link>
               {!Authorize.isAuthenticated() && <Link className="navbar-item" to="/login">Login</Link>}
               {!Authorize.isAuthenticated() && <Link className="navbar-item" to="/register">Register</Link>}
-              {Authorize.isAuthenticated() && <a className="navbar-item" onClick={this.logout}>Logout</a>}
+              {Authorize.isAuthenticated() && <Link className="navbar-item" to="/profile">Profile</Link>}
+              {Authorize.isAuthenticated() && <Link className="navbar-item" onClick={this.logout} to="/">Logout</Link>}
             </div>
           </div>
         </div>
@@ -47,4 +54,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar
+export default withRouter(Navbar)

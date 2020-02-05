@@ -66,25 +66,25 @@ class Auth extends React.Component {
                 <div className="field">
                   <label className="label">Username</label>
                   <div className="control">
-                    <input type="text" className="input" name="username" onChange={this.changeRegister} required />
+                    <input type="text" className="input" name="username" placeholder="Username" onChange={this.changeRegister} required />
                   </div>
                 </div>
                 <div className="field">
                   <label className="label">Email</label>
                   <div className="control">
-                    <input type="text" className="input" name="email" onChange={this.changeRegister} required />
+                    <input type="text" className="input" name="email" placeholder="Emaill Address" onChange={this.changeRegister} required />
                   </div>
                 </div>
                 <div className="field">
                   <label className="label">Password</label>
                   <div className="control">
-                    <input type="password" className="input" name="password" onChange={this.changeRegister} required />
+                    <input type="password" className="input" name="password" placeholder="Password" onChange={this.changeRegister} required />
                   </div>
                 </div>
                 <div className="field">
                   <label className="label">Password Confirmation</label>
                   <div className="control">
-                    <input type="password" className="input" name="passwordConfirmation" onChange={this.changeRegister} required />
+                    <input type="password" className="input" name="passwordConfirmation" placeholder="Confirm Password" onChange={this.changeRegister} required />
                   </div>
                 </div>
                 <div className="field">

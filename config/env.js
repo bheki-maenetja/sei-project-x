@@ -34,8 +34,8 @@ const orgObjs = [
     base: []
   },
   {
-    name: 'The Medillin Cartel',
-    slug: 'escobar-98',
+    name: 'Medillin Cartel',
+    slug: 'medillin-98',
     type: 'drug cartel',
     imageURL: 'https://i.imgur.com/9G63FB3.jpg',
     business: ['money laundering', 'narcotics'],
@@ -115,73 +115,73 @@ const orgObjs = [
     base: []
   },
   {
-    name: 'Company Name1',
-    slug: 'org-handle1',
-    type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
-    business: ['extortion', 'money laundering', 'narcotics'],
+    name: 'The Cali Cartel',
+    slug: 'cali-25',
+    type: 'drug cartel',
+    imageURL: 'https://i.imgur.com/mOCcUfE.jpg',
+    business: ['money laundering', 'narcotics', 'racketeering'],
+    countries_of_operation: ['United States of America', 'Columbia', 'Mexico'],
+    base: []
+  },
+  {
+    name: 'The Commision',
+    slug: 'commiss-22',
+    type: 'crime syndicate',
+    imageURL: 'https://i.imgur.com/g1CZUE0.jpg',
+    business: ['all things mobster'],
     countries_of_operation: ['United States of America'],
     base: []
   },
   {
-    name: 'Company Name2',
-    slug: 'org-handle2',
+    name: 'Yamaguchi-gumi',
+    slug: 'yakuza-29',
     type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
-    business: ['extortion', 'money laundering', 'narcotics'],
+    imageURL: 'https://i.imgur.com/oKDNOD7.png',
+    business: ['terrorism', 'money laundering', 'polictics', 'racketeering'],
+    countries_of_operation: ['Japan'],
+    base: []
+  },
+  {
+    name: 'Anonymous',
+    slug: 'anonymous-19',
+    type: 'hacker group',
+    imageURL: 'https://i.imgur.com/2DaE6Ng.jpg',
+    business: ['cyber crime'],
     countries_of_operation: ['United States of America'],
     base: []
   },
   {
-    name: 'Company Name3',
-    slug: 'org-handle3',
+    name: 'Genovese Crime Family',
+    slug: 'genovese-55',
     type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
-    business: ['extortion', 'money laundering', 'narcotics'],
+    imageURL: 'https://i.imgur.com/gIbo0MM.jpg',
+    business: ['racketeering', 'labor union infiltration', 'extortion', 'illegal gambling', 'narcotics', 'money laundering'],
     countries_of_operation: ['United States of America'],
     base: []
   },
   {
-    name: 'Company Name4',
-    slug: 'org-handle4',
-    type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
-    business: ['extortion', 'money laundering', 'narcotics'],
+    name: 'Wolves of Wall Street',
+    slug: 'wolf-12',
+    type: 'crime syndicate',
+    imageURL: 'https://i.imgur.com/hQNOxDJ.jpg',
+    business: ['money laundering', 'illegal gambling'],
     countries_of_operation: ['United States of America'],
     base: []
   },
   {
-    name: 'Company Name5',
-    slug: 'org-handle5',
-    type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
-    business: ['extortion', 'money laundering', 'narcotics'],
-    countries_of_operation: ['United States of America'],
+    name: 'Peaky Blinders',
+    slug: 'peaky-13',
+    type: 'gang',
+    imageURL: 'https://i.imgur.com/sjrx8u4.png',
+    business: ['extortion', 'racketeering', 'bank robbery', 'illegal gambling'],
+    countries_of_operation: ['United Kingdom'],
     base: []
   },
   {
-    name: 'Company Name6',
-    slug: 'org-handle6',
+    name: 'The Boardwalk Empire',
+    slug: 'boardwalk-5',
     type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
-    business: ['extortion', 'money laundering', 'narcotics'],
-    countries_of_operation: ['United States of America'],
-    base: []
-  },
-  {
-    name: 'Company Name7',
-    slug: 'org-handle7',
-    type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
-    business: ['extortion', 'money laundering', 'narcotics'],
-    countries_of_operation: ['United States of America'],
-    base: []
-  },
-  {
-    name: 'Company Name8',
-    slug: 'org-handle8',
-    type: 'crime family',
-    imageURL: 'https://i.imgur.com/QJgqeo0.jpg',
+    imageURL: 'https://i.imgur.com/I8VF1uT.jpg',
     business: ['extortion', 'money laundering', 'narcotics'],
     countries_of_operation: ['United States of America'],
     base: []
@@ -309,114 +309,59 @@ const personObjs = [
     rank: ['Boss', 1]
   },
   {
-    name: 'Name1',
-    alias: 'Alias1',
-    handle: 'twitter handle1',
+    name: 'Santino Corleone',
+    alias: 'Sonny Hothead',
+    handle: 'sonny-69',
     gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
+    business: ['money laundering', 'extortion'],
+    imageURL: 'https://i.imgur.com/638sOby.jpg',
+    contact_details: { tel: '0116739090' },
     affiliations: 'godfather-12',
+    rank: ['Underboss', 2]
+  },
+  {
+    name: 'Pablo Escobar',
+    alias: 'El Jefe',
+    handle: 'escobar-98',
+    gender: 'male',
+    business: ['money laundering', 'narcotics'],
+    imageURL: 'https://i.imgur.com/PUNLSmP.jpg',
+    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
+    affiliations: 'medillin-98',
     rank: ['Boss', 1]
   },
   {
-    name: 'Name2',
-    alias: 'Alias2',
-    handle: 'twitter handle2',
+    name: 'Anthony Provezano',
+    alias: 'Tony Pro',
+    handle: 'pro-33',
     gender: 'male',
     business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
+    imageURL: 'https://i.imgur.com/3NnIm1T.jpg',
+    contact_details: { email: 'tony-is-a-pro@gmail.com' },
+    affiliations: 'teamster-75',
+    rank: ['Underboss', 2]
+  },
+  {
+    name: 'Charles Luciano',
+    alias: 'Lucky Lucy',
+    handle: 'luciano-55',
+    gender: 'male',
+    business: ['money laundering', 'politics'],
+    imageURL: 'https://i.imgur.com/VBtEnTi.jpg?1',
     contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
+    affiliations: 'genovese-55',
+    rank: ['Boss', 1]
+  },
+  {
+    name: 'Mo Green',
+    alias: 'The Builder',
+    handle: 'green-13',
+    gender: 'male',
+    business: ['money laundering', 'politics', 'illegal gambling'],
+    imageURL: 'https://i.imgur.com/1hoFono.jpg',
+    contact_details: { tel: '0116739090' },
     affiliations: 'godfather-12',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name3',
-    alias: 'Alias3',
-    handle: 'twitter handle3',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'godfather-12',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name4',
-    alias: 'Alias4',
-    handle: 'twitter handle4',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'godfather-12',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name5',
-    alias: 'Alias5',
-    handle: 'twitter handle5',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'godfather-12',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name6',
-    alias: 'Alias6',
-    handle: 'twitter handle6',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'godfather-12',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name7',
-    alias: 'Alias7',
-    handle: 'twitter handle7',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'escobar-98',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name8',
-    alias: 'Alias8',
-    handle: 'twitter handle8',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'escobar-98',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name9',
-    alias: 'Alias9',
-    handle: 'twitter handle9',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'escobar-98',
-    rank: ['Boss', 1]
-  },
-  {
-    name: 'Name10',
-    alias: 'Alias10',
-    handle: 'twitter handle10',
-    gender: 'male',
-    business: ['money laundering', 'politics'],
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    contact_details: { tel: '0116739090', email: 'hoffa@jimmy.com' },
-    affiliations: 'escobar-98',
-    rank: ['Boss', 1]
+    rank: ['Underboss', 2]
   }
   // {
   //   name: 'Name',
@@ -437,7 +382,7 @@ const jobObjs = [
     imageURL: 'https://i.imgur.com/gh9B1Vp.jpg',
     type: 'assasination',
     value: 10000000,
-    issued_by: 'vito-12',
+    issued_by: 'hoffa-75',
     description: 'We need you to wack the president',
     terms_of_contract: 'Simple hit job. When you\'re done, head to Cuba to collect your payment'
   },
@@ -446,7 +391,7 @@ const jobObjs = [
     imageURL: 'https://i.imgur.com/r6Hzxm2.jpg',
     type: 'smuggling',
     value: 500000,
-    issued_by: 'tony-27',
+    issued_by: 'escobar-98',
     description: 'Run a drug smuggling operation from Columbia to the USA',
     terms_of_contract: 'You need to smuggle a half ton of powder per week.'
   },
@@ -509,7 +454,7 @@ const jobObjs = [
     imageURL: 'https://i.imgur.com/YwbtwwZ.jpg',
     type: 'illegal gambling',
     value: 30000,
-    issued_by: 'michael-58',
+    issued_by: 'green-13',
     description: 'Go from town to town swindling casinos out of cash. You need to raise 50k in 2 days',
     terms_of_contract: 'You get paid 30k plus 10% of the money'
   },
@@ -521,105 +466,6 @@ const jobObjs = [
     issued_by: 'vito-12',
     description: 'One of our guys is having trouble with the feds. We need you to butt heads and knock some sense into people...by any means neccessary',
     terms_of_contract: '15k if our guy walks free. Plus, you we\'ll protect you if you ever get into trouble'
-  },
-  {
-    name: 'Job Name1',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name2',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name3',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name4',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name5',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name6',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name7',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name8',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name9',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name10',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
-  },
-  {
-    name: 'Job Name11',
-    imageURL: 'https://i.imgur.com/JWUuCLf.jpg',
-    type: 'Job Type',
-    value: 15000,
-    issued_by: 'vito-12',
-    description: 'Description',
-    terms_of_contract: 'Terms of Contract'
   }
   // {
   //   name: 'Job Name',
