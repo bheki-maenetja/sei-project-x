@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import Select from 'react-select'
 
 import Authorize from '../../lib/auth'
 
@@ -7,6 +8,10 @@ class Auth extends React.Component {
 
   state = {
     registerData: {
+      name: '',
+      alias: '',
+      handle: '',
+      business: [],
       username: '',
       email: '',
       password: '',
@@ -20,8 +25,27 @@ class Auth extends React.Component {
     }
   }
 
+  options = [
+    { value: 'extortion', label: 'Extortion' },
+    { value: 'politics', label: 'Politics' },
+    { value: 'illegal gambling', label: 'Gambling' },
+    { value: 'racketeering', label: 'Racketeering' },
+    { value: 'hit-jobs', label: 'Hit-Jobs' },
+    { value: 'narcotics', label: 'Narcotics' },
+    { value: 'money laundering', label: 'Money Laundering' },
+    { value: 'cyber crime', label: 'Cyber Crime' },
+    { value: 'corporate espionage', label: 'Corporate Espionage' },
+    { value: 'bank robbery', label: 'Bank Robbery' },
+    { value: 'heists', label: 'Heists' }
+  ]
+
   changeRegister = ({ target: { name, value } }) => {
     this.setState({ registerData: { ...this.state.registerData, [name]: value }, errors: { ...this.state.errors, [name]: '' } })
+  }
+
+  multiChangeRegister = (data) => {
+    const business = data ? data.map(item => item.value) : []
+    this.setState({ registerData: { ...this.state.registerData, business } })
   }
 
   changeLogin = ({ target: { name, value } }) => {
@@ -62,6 +86,30 @@ class Auth extends React.Component {
             {this.props.location.pathname === '/register' && 
               <form className="column is-half is-offset-one-quarter" onSubmit={this.registerUser}>
                 <h2 className="title is-2">Register</h2>
+                <div className="field">
+                  <label className="label">Name</label>
+                  <div className="control">
+                    <input type="text" className="input" name="name" placeholder="Name" onChange={this.changeRegister} required />
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label">Alias</label>
+                  <div className="control">
+                    <input type="text" className="input" name="alias" placeholder="Alias" onChange={this.changeRegister} required />
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label">Handle</label>
+                  <div className="control">
+                    <input type="text" className="input" name="handle" placeholder="Handle" onChange={this.changeRegister} required />
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label">Business</label>
+                  <div className="control">
+                    <Select options={this.options} isMulti onChange={this.multiChangeRegister}></Select>
+                  </div>
+                </div>
                 <div className="field">
                   <label className="label">Username</label>
                   <div className="control">

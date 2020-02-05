@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 
 const userBlueprint = mongoose.Schema({
+  name: { type: String, required: true, unique: true },
+  alias: { type: String, required: true, unique: true },
+  handle: { type: String, required: true, unique: true },
+  business: { type: Array, required: true },
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true }

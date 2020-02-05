@@ -13,10 +13,7 @@ router.route('/login')
   .post(authControl.login)
 
 router.route('/users')
-  .get(authControl.getAllUsers)
-
-router.route('/users/:id')
-  .get(authControl.getUser)
+  .get(secureRoute, authControl.getUser)
 
 // People of Interest
 router.route('/people')

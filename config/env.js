@@ -4,18 +4,30 @@ const secret = process.env.SECRET || 'I made him an offer he couldn\'t refuse'
 
 const userObjs = [
   {
+    'name': 'First User',
+    'alias': 'Nickname 1',
+    'handle': 'user-1',
+    'business': [],
     'username': 'user',
     'email': 'user@email.com',
     'password': 'pass',
     'passwordConfirmation': 'pass'
   },
   {
+    'name': 'Second User',
+    'alias': 'Nickname 2',
+    'handle': 'user-2',
+    'business': [],
     'username': 'user2',
     'email': 'user2@email.com',
     'password': 'pass2',
     'passwordConfirmation': 'pass2'
   },
   {
+    'name': 'Third User',
+    'alias': 'Nickname 3',
+    'handle': 'user-3',
+    'business': [],
     'username': 'user3',
     'email': 'user3@email.com',
     'password': 'pass3',
