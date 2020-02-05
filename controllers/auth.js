@@ -22,4 +22,18 @@ function login(req, res) {
     .catch(err => res.status(406).json({ message: 'SOMETHING IS VERY WRONG!!!', err }))
 }
 
-module.exports = { register, login }
+function getAllUsers(req, res) {
+  User
+    .find()
+    .then(users => users ? res.status(200).json(users) : res.status(404).json({ message: 'Error 404 - Users not found' }))
+    .catch(err => res.status(406).json({ message: 'SOMETHING IS VERY WRONG!!!', err }))
+}
+
+function getUser(req, res) {
+  User
+    .findById(req.params.id)
+    .then(user => user ? res.status(200).json(user) : res.status(400).json({ message: 'Error 404 - User not found' }))
+    .catch(err => res.status(406).json({ message: 'SOMETHING IS VERY WRONG!!!', err }))
+}
+
+module.exports = { register, login, getUser, getAllUsers }

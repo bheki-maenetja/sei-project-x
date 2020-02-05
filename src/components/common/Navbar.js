@@ -21,7 +21,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     const { navbarOpen } = this.state
     return (
       <>
