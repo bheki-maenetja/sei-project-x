@@ -51,7 +51,7 @@ const orgObjs = [
     type: 'drug cartel',
     imageURL: 'https://i.imgur.com/9G63FB3.jpg',
     business: ['money laundering', 'narcotics'],
-    countries_of_operation: ['United States of America', 'Mexico', 'Columbia'],
+    countries_of_operation: ['United States of America', 'Mexico', 'Colombia'],
     base: []
   },
   {
